@@ -7,6 +7,7 @@ async function add(filePath) {
   const data = fs.readFileSync(filePath);
   const response = await ipfs.add(data);
   if (response && response.length > 0) {
+    console.log(response[0].path);
     return response[0].path;
   }
   return null;
