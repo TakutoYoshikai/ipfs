@@ -14,7 +14,7 @@ async function add(filePath) {
 }
 
 async function get(cid) {
-  for await (const file of ipfs.get(cid)) {
+  for await (const file of ipfs.files.get(cid)) {
     const content = new BufferList();
     for await (const chunk of file.content) {
       content.append(chunk);
