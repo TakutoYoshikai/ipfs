@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
+  "bin": {
+    "ipfs-add": "./bin/ipfs-add",
+    "ipfs-get": "./bin/ipfs-get"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
