@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+require("../index").get(process.argv[2]);
+
