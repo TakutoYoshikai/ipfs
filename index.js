@@ -17,6 +17,7 @@ async function get(cid) {
   const response = await ipfs.files.get(cid);
   fs.writeFileSync("output.dat", response[0].content);
 }
+
 module.exports = {
   add,
   get,
